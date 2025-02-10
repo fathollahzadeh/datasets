@@ -1,8 +1,8 @@
 from filesplit.split import Split
 from filesplit.merge import Merge
+from os.path import dirname
 import os
 
-
-fname_zip = "zip/"
-merge = Merge(inputdir=fname_zip, outputdir="zip/", outputfilename="imdb.zip")
+module_path = dirname(__file__)
+merge = Merge(inputdir=fname_zip, outputdir=module_path, outputfilename="imdb.zip")
 merge.merge()
