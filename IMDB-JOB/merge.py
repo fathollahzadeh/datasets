@@ -4,5 +4,5 @@ from os.path import dirname
 import os
 
 module_path = dirname(__file__)
-merge = Merge(inputdir=fname_zip, outputdir=module_path, outputfilename="imdb.zip")
+merge = Merge(inputdir=module_path, outputdir=module_path, outputfilename="imdb.zip")
 merge.merge()
