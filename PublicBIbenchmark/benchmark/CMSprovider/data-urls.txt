@@ -1,0 +1,2 @@
+http://event.cwi.nl/da/PublicBIbenchmark/CMSprovider/CMSprovider_1.csv.bz2
+http://event.cwi.nl/da/PublicBIbenchmark/CMSprovider/CMSprovider_2.csv.bz2

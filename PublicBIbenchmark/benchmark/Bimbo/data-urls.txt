@@ -1,0 +1,1 @@
+http://event.cwi.nl/da/PublicBIbenchmark/Bimbo/Bimbo_1.csv.bz2
