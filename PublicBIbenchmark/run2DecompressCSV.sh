@@ -22,7 +22,7 @@ for db in "${DBS[@]}"; do
 		mv "${file}_tmp" $file
 		rm -rf "${file}_tmp"
 
-		if [[ "$db" == "HashTags" || "$db" == "Corporations" || "$db" == "Euro2016" || "$db" == "IGlocations2" || "$db" == "Rentabilidad" || "$db" == "Rentabilidad" || "$db" == "TableroSistemaPenal"]]; then
+		if [[ "$db" == "HashTags" || "$db" == "Corporations" || "$db" == "Euro2016" || "$db" == "IGlocations2" || "$db" == "Rentabilidad" || "$db" == "Rentabilidad" || "$db" == "TableroSistemaPenal" ]]; then
     		python "${WORKING_DIR}/refine.py" --data-path ${file} --dataset-name ${db}
 			rm -rf $file
 			mv "${file}_clean" $file
