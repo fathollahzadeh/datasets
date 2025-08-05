@@ -37,7 +37,7 @@ if __name__ == '__main__':
     print(args)
     input_file = args.data_path
     output_file = f'{input_file}_clean'
-    expected_cols = {'HashTags': 101, 'Corporations': 27, 'Euro2016': 11, 'IGlocations2': 20,'Rentabilidad': 0,'Romance': 12,'TableroSistemaPenal': 0}
+    expected_cols = {'HashTags': 101, 'Corporations': 27, 'Euro2016': 11, 'IGlocations2': 20,'Rentabilidad': 0,'Romance': 12,'TableroSistemaPenal': 0, 'NYC': 54}
     if args.dataset_name == "Rentabilidad":
         if "rentabilidad1.table" in input_file:
             expected_cols = 138
