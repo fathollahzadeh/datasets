@@ -39,31 +39,29 @@ if __name__ == '__main__':
     output_file = f'{input_file}_clean'
     expected_cols = {'HashTags': 101, 'Corporations': 27, 'Euro2016': 11, 'IGlocations2': 20,'Rentabilidad': 0,'Romance': 12,'TableroSistemaPenal': 0, 'NYC': 54}
     if args.dataset_name == "Rentabilidad":
-        if "rentabilidad1.table" in input_file:
-            expected_cols = 138
+        if "rentabilidad2.table" in input_file:
+            expected_columns = 138
         else :
-            expected_cols = 141
+            expected_columns = 141
     elif args.dataset_name == "TableroSistemaPenal":
         if "tablerosistemapenal1.table" in input_file:
-            expected_cols = 27
+            expected_columns = 27
         elif "tablerosistemapenal2.table" in input_file:
-            expected_cols = 22
+            expected_columns = 22
         elif "tablerosistemapenal3.table" in input_file:
-            expected_cols = 21
+            expected_columns = 21
         elif "tablerosistemapenal4.table" in input_file:
-            expected_cols = 21
+            expected_columns = 21
         elif "tablerosistemapenal5.table" in input_file:
-            expected_cols = 21
+            expected_columns = 21
         elif "tablerosistemapenal6.table" in input_file:
-            expected_cols = 13
+            expected_columns = 13
         elif "tablerosistemapenal7.table" in input_file:
-            expected_cols = 27
+            expected_columns = 27
         elif "tablerosistemapenal8.table" in input_file:
-            expected_cols = 22            
-
-
-
-    expected_columns = expected_cols[args.dataset_name]
+            expected_columns = 22            
+    else:
+         expected_columns = expected_cols[args.dataset_name]
 
     with open(input_file, 'r', encoding='utf-8') as infile, \
         open(output_file, 'w', encoding='utf-8', newline='') as outfile:
